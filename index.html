@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>我的個人網頁</title>
+    <!-- 引入 jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>歡迎來到我的 GitHub Personal Page</h1>
+    <p id="intro">這是我的網頁自我介紹。</p>
+    
+    <!-- 包含 jQuery 功能的按鈕 -->
+    <button id="btn">點我測試 jQuery 效果</button>
+
+    <script>
+        // 當按鈕被點擊時，利用 jQuery 改變文字顏色與內容
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#intro").text("jQuery 互動功能運作成功！").css("color", "blue");
+            });
+        });
+    </script>
+</body>
+</html>
